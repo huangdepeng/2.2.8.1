@@ -885,19 +885,19 @@ namespace Sensor {
 
         switch (port) {         //x轴模拟量获取
             case hicbit_Port.port1:
-                pins.setPull(DigitalPin.P15, PinPullMode.PullUp);
+                pins.digitalWritePin(DigitalPin.P15, PinPullMode.PullUp);
                 ADCPin_x = AnalogPin.P1;
                 break;
             case hicbit_Port.port2:
-                pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
+                pins.digitalWritePin(DigitalPin.P13, PinPullMode.PullUp);
                 ADCPin_x = AnalogPin.P2;
                 break;
             case hicbit_Port.port3:
-                pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
+                pins.digitalWritePin(DigitalPin.P14, PinPullMode.PullUp);
                 ADCPin_x = AnalogPin.P3;
                 break;
             case hicbit_Port.port4:
-                pins.setPull(DigitalPin.P10, PinPullMode.PullUp);
+                pins.digitalWritePin(DigitalPin.P10, PinPullMode.PullUp);
                 ADCPin_x = AnalogPin.P4;
                 break;
         }
@@ -905,19 +905,19 @@ namespace Sensor {
         basic.pause(100);
         switch (port) {         //y轴模拟量获取
             case hicbit_Port.port1:
-                pins.setPull(DigitalPin.P15, PinPullMode.PullDown);
+                pins.digitalWritePin(DigitalPin.P15, PinPullMode.PullDown);
                 ADCPin_y = AnalogPin.P1;
                 break;
             case hicbit_Port.port2:
-                pins.setPull(DigitalPin.P13, PinPullMode.PullDown);
+                pins.digitalWritePin(DigitalPin.P13, PinPullMode.PullDown);
                 ADCPin_y = AnalogPin.P2;
                 break;
             case hicbit_Port.port3:
-                pins.setPull(DigitalPin.P14, PinPullMode.PullDown);
+                pins.digitalWritePin(DigitalPin.P14, PinPullMode.PullDown);
                 ADCPin_y = AnalogPin.P3;
                 break;
             case hicbit_Port.port4:
-                pins.setPull(DigitalPin.P10, PinPullMode.PullDown);
+                pins.digitalWritePin(DigitalPin.P10, PinPullMode.PullDown);
                 ADCPin_y = AnalogPin.P4;
                 break;
         }
